@@ -1,0 +1,9 @@
+body{
+    background-color: blue;
+    color: white;
+}
+
+h1{
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
