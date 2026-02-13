@@ -1,0 +1,12 @@
+body{
+    background-color: aquamarine;
+    color: wheat;
+}
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+*{
+    padding: 0;
+    
+}
