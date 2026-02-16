@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home Page
+{% endblock %}
+
+{% block content %}
+<h1>All Projects</h1>
+
+<div class='grid grid-cols-3 gap-4'>
+
+
+{% for pr in projects %}
+  <div class="bg-green-700 p-5 rounded">
+      <img class='rounded' src="{{ pr.image.url }}" alt="{{ pr.name }}" width="200">
+      <h3 class='text-2xl font-bold'>{{ pr.name }}</h3>
+      <p>{{ pr.type }}</p>
+      <a href="{% url 'project_details' pr.id %}">
+        <button type = 'button'
+        class = 'inline-flex '>
+            {{pr.type}} - {{pr.id}}
+        </button>
+      </a>
+  </div>
+{% endfor %}
+
+{% endblock %}
+
+</div>
